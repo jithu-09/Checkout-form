@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../BS checkout form/amazon-blkwht-1920.png">
+	<title>Checkout form</title>
+	<!-- bootstap link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="../BS checkout form/style.css">
+</head>
+<body>
+	<div class="container-fluid p-5">
+		<div class="row">
+			<div class="col-md-8 mt-5" id="top">
+				<h1 class="display-5">Billing address</h1>
+				<form class="mt-4">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="first">First Name</label>
+							<input type="text" id="first" class="form-control" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="Last">Last Name</label>
+							<input type="text" id="Last" class="form-control" required>
+						</div>
+					</div>
+					<label for="username">Username</label>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<span>@</span>
+							</div>
+						</div>
+						<input type="text" id="username" placeholder="username" class="form-control" required>
+					</div>
+					<label>Email<span class="text-muted">(optional)</span></label>
+					<input type="Email" placeholder="you@example.com" class="form-control mb-3" required>
+					<label>Address</label>
+					<input type="address" placeholder="1234 main st" class="form-control mb-3" required>
+					<label>Address<span class="text-muted">(optional)</span></label>
+					<input type="address" placeholder="1234 sub st" class="form-control mb-3" required>
+					<div class="row mb-3">
+					  <div class="col-md-4">	
+						<label>Country</label>
+						<button class="btn btn-lg bg-light dropdown-toggle d-block" data-toggle="dropdown">Choose</button>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">India</a>
+						</div>
+					  </div>
+					  <div class="col-md-4">	
+						<label>State</label>
+						<button class="btn btn-lg bg-light dropdown-toggle d-block" data-toggle="dropdown">Choose</button>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">TS</a>
+							<a href="#" class="dropdown-item">AP</a>
+							<a href="#" class="dropdown-item">MP</a>
+						</div>
+					  </div>
+					  <div class="col-md-4">
+					  	<label>Pincode</label>
+					  	<input type="number" class="form-control" required>
+					  </div>	
+					</div>
+					<hr>
+					<input type="checkbox" id="shipping">
+					<label for="shipping">Shipping address is the same as my billing address</label>
+					<br>
+					<input type="checkbox" id="save">
+					<label for="save">Save this information for next time</label>
+					<hr>
+					<h2 class="text-dark mb-3">Payments</h2>
+					<input type="radio" id="cc">
+					<label for="cc">Credit Card</label>
+					<br>
+					<input type="radio" id="dc">
+					<label for="dc">Debit Card</label>
+					<br>
+					<input type="radio" id="pp">
+					<label for="pp">Paypal</label>
+					<div class="form-row justify-content-between">
+						<div class="form-group col-md-6">
+							<label for="cardname">Name on card</label>
+							<input type="text" id="cardname" class="form-control" required>
+							<p class="text-muted">Full name as displayed on card</p>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="ccno">Credit Card number</label>
+							<input type="number" id="ccno" class="form-control" required>
+						</div>
+					</div>
+					<div class="form-row col-md-6">
+						<div class="form-group col-md-6">
+							<label for="exp">Expiration</label>
+							<input type="number" id="exp" class="form-control" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="cvv">CVV</label>
+							<input type="number" id="cvv" class="form-control" required>
+						</div>
+					</div>
+					<hr>
+					<button class="btn btn-primary btn-lg text-center text-light form-control p-auto">Continue to Checkout</button>
+				</form>
+			</div>
+			<div class="col-md-4 mt-5">
+				<h2 class="text-secondary d-flex justify-content-between align-items-center" style="font-size: 30px;">Your Cart<span class="badge badge-pill badge-secondary">3</span></h2>
+				<ul class="list-group">
+					<li class="list-group-item">
+					  <div class="row">	
+						<div class="col-md-9">
+							<h4 style="font-size: 18px;"><strong>Product name</strong></h4>
+							<p class="text-muted d-inline-block" style="font-size: 15px;">Brief description</p>
+						</div>
+						<div class="col-md-3 justify-content-end">
+							<p>$12</p>
+						</div>
+					  </div>	
+					</li>
+					<li class="list-group-item p-auto">
+					  <div class="row">	
+						<div class="col-md-9">
+							<h4 style="font-size: 18px;"><strong>Product name</strong></h4>
+							<p class="text-muted" style="font-size: 15px;">Brief description</p>
+						</div>
+						<div class="col-md-3 justify-content-end">
+							<p>$8</p>
+						</div>
+					  </div>	
+					</li>
+					<li class="list-group-item p-auto">
+					  <div class="row">	
+						<div class="col-md-9">
+							<h4 style="font-size: 18px;"><strong>Product name</strong></h4>
+							<p class="text-muted" style="font-size: 15px;">Brief description</p>
+						</div>
+						<div class="col-md-3 justify-content-end">
+							<p>$5</p>
+						</div>
+					  </div>	
+					</li>
+					<li class="list-group-item p-auto text-success">
+					  <div class="row">	
+						<div class="col-md-9">
+							<h4 style="font-size: 18px;"><strong>Promo-code</strong></h4>
+							<p style="font-size: 15px;">XWE23e4t</p>
+						</div>
+						<div class="col-md-3 justify-content-end">
+							<p>-$5</p>
+						</div>
+					  </div>	
+					</li>
+					<li class="list-group-item p-auto">
+					  <div class="row">	
+						<div class="col-md-9">
+							<h4 style="font-size: 20px;">TOTAL(USD)</h4>
+						</div>
+						<div class="col-md-3 justify-content-end">
+							<p><strong>$20</strong></p>
+						</div>
+					  </div>	
+					</li>
+				</ul>
+				<ul class="list-group mt-3">
+					<li class="list-group-item">
+						<div class="input-group">
+								<input type="number" class="form-control" placeholder="Promo-code">
+								<div class="input-group-append">
+									<button class="btn btn-secondary">Redeem</button>
+								</div>
+						</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+		<hr style="height: 3px; background-color: black;">
+		<footer class="col-md-4 text-center mx-auto mt-5">
+			<p>&copy; 2017-2018 Company Name</p>
+			<div class="row col-md-9 ml-3  justify-content-between">
+			  <div class="col-md-4">	
+			   <a href="#top">Privacy</a>
+			  </div> 
+			  <div class="col-md-4">	
+			   <a href="#top">Terms</a>
+			  </div> 
+			  <div class="col-md-4">	
+			   <a href="#top">Services</a>
+			  </div> 
+			</div>
+		</footer>
+	</div>
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
